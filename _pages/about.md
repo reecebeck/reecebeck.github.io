@@ -18,6 +18,6 @@ social: true # includes social icons at the bottom of the page
 
 Avid Engineer and tinkerer. Currently studying mechanical engineering at WPI
 
-I refurbish and resell used silicon chip manufacturing equipment sourced from silicon valley on my <a href="https://www.ebay.com/usr/rebe1269">ebay store</a>
+I refurbish and resell used silicon chip manufacturing equipment sourced from silicon valley on my <a href="https://www.ebay.com/usr/rebe1269">Ebay store</a>
 
 Apart from these, I am a member of my school's club lacrosse team and the Alpha Tao Omega Fraternity. 
