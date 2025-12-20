@@ -22,7 +22,7 @@ To do this, we began work on the wiring harness for our bench test.
 layout: page
 title: project
 description: a project with a background image
-img: /assets/img/12.jpg
+img: /assets/img/Minimum_Power_Req.png
 ---
 
 
