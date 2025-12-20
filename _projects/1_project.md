@@ -1,25 +1,33 @@
 ---
 layout: page
-title: EV Truck Project
-description: with background image
-img: assets/img/prof_pic_color.png
+title: Tesla EV Conversion
+description: Cobatlix Industries
+img: assets/img/motor_and_batteries.jpg
 importance: 1
 category: work
 related_publications: true
 ---
+Early summer 2025, I learned of a project, done under the company Cobaltix, to take the drive train and batteries from two Tesla Model 3s, and implement them into a completly custom off-road truck build. They had mad significant progress already with the body of the vehicle and retrofit of the front end, with the remaining pieces being installing, and more importantly getting all of the electronics to run properly. Upon hearing of their mission, I became excited and knew I could apply my own skills to the project. The usasge of CAN bus, technology involved with the BMS system, and tuning of the motor among other systems were all highly familar to me, and so I immadetly knew how to get started.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Intially, we had to program the VCU (Vehicle Control Unit), responsible for manageing every system in the car. During the first stages of the project, the original choice for the VCU was the AEM VCU 300, which is what we worked with here. It needed to be flashed with the appropriate firmware from a computer, through a wired CAN connection. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+To do this, we began work on the wiring harness for our bench test. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+
+
+
+
+
+---
+layout: page
+title: project
+description: a project with a background image
+img: /assets/img/12.jpg
+---
+
+
+
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
