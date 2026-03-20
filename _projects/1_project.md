@@ -9,7 +9,7 @@ related_publications: true
 ---
 <b>Project Overview: </b>
 
-	Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
+Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
 
 
 <b>Bench test one: </b>
@@ -29,6 +29,7 @@ AEM EV CCU (Combined Charging Unit)
    path='assets/img/Batteries.jpg' 
    title='example image' 
    class='img-fluid rounded z-depth-1' 
+   style='max-width: 300px; height: auto;'
 %}
     </div>
 </div>
