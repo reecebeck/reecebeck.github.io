@@ -22,17 +22,18 @@ AEM EV CCU (Combined Charging Unit)
 
 
 <div class="row">
+<div style="max-width: 200px;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Batteries.jpg' 
    title='example image' 
    class='img-fluid rounded z-depth-1' 
-   style='max-width: 100px; height: auto;'
 %}
     </div>
+    </div>
 </div>
-
+<div class="caption"> </div>
 
 The goal here was to get moving fast. We wanted to create an initial prototype as soon as possible with the parts we had, because many of what we’d need to order were backordered or faced long lead times. 
 However, we were given a list of design goals which were far more lofty than the capabilities of the parts we had. The requested specs were incredible - long battery range (300mi+), 250kW fast charging, Tesla Plaid level horsepower, yet with technology from 2013, with 400V architecture. Regardless, we proceeded. 
