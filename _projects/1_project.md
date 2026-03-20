@@ -5,7 +5,6 @@ description: EV Drivetrain
 img: assets/img/CANID.png
 importance: 1
 category: work
-related_publications: true
 ---
 <b>Project Overview: </b>
 
