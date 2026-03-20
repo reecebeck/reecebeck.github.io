@@ -11,6 +11,7 @@ related_publications: true
 
 	Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
 
+
 <b>Bench test one: </b>
 
 Parts used:
