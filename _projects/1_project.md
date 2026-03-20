@@ -29,7 +29,7 @@ AEM EV CCU (Combined Charging Unit)
    path='assets/img/Batteries.jpg' 
    title='example image' 
    class='img-fluid rounded z-depth-1' 
-   style='max-width: 300px; height: auto;'
+   style='max-width: 100px; height: auto;'
 %}
     </div>
 </div>
@@ -46,25 +46,25 @@ This system was controlled through the VCU, which was set up next. Initial confi
 
 Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEM CAL, this can be done by setting the values equal to the following:
 
-
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+       {% include figure.liquid 
+   loading='eager' 
+   path='assets/img/CANID.png' 
+   title='example image' 
+   class='img-fluid rounded z-depth-1' 
+   style='max-width: 200px; height: auto;'
+%}
+    </div>
 </div>
-```
 
-{% endraw %}
+At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
+
+We quickly added an accelerator pedal from a Tesla Model 3, and implemented a 3 position switch as a gear selector, provided sufficient inputs for the VCU to provide torque request commands to the motor. This marked completion of the first phase of the project - our VCU and motor successfully functioned together. 
+
+<b>Bench test two, further goals:</b>
+
+Coming back to the initial goals of the project - a high performance, long range, fast charging EV, we conducted a design review. Our bench test functioned well, and would scale up to full size properly with a full set of batteries. However, questions remained, namely with the desired specifications of the original build. During this project's conception, two Tesla vehicles were salvaged for their battery packs, and all were to be used for the benefit of added range. However, this came with technical challenges - the motor-inverter package that was purchased could support a max voltage of 480V, yet the complete use of two full Tesla batteries would put the pack voltage beyond 700V, far too high for our equipment. Additionally, 250kW fast charging requires a system voltage of 800V, and currently no consumer equipment exists for this build. Clearly the scope of this project had to be adjusted. 
+
+
+
