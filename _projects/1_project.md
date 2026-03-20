@@ -1,29 +1,25 @@
 ---
 layout: page
-title: Tesla EV Conversion
-description: Cobatlix Industries
-img: assets/img/motor_and_batteries.jpg
+title: EV Conversion Project
+description: EV Drivetrain
+img: assets/img/CANID.png
 importance: 1
 category: work
 related_publications: true
 ---
-Early summer 2025, I learned of a project, done under the company Cobaltix, to take the drive train and batteries from two Tesla Model 3s, and implement them into a completly custom off-road truck build. They had mad significant progress already with the body of the vehicle and retrofit of the front end, with the remaining pieces being installing, and more importantly getting all of the electronics to run properly. Upon hearing of their mission, I became excited and knew I could apply my own skills to the project. The usasge of CAN bus, technology involved with the BMS system, and tuning of the motor among other systems were all highly familar to me, and so I immadetly knew how to get started.
+<b>Project Overview: </b>
+	Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
 
-Intially, we had to program the VCU (Vehicle Control Unit), responsible for manageing every system in the car. During the first stages of the project, the original choice for the VCU was the AEM VCU 300, which is what we worked with here. It needed to be flashed with the appropriate firmware from a computer, through a wired CAN connection. 
+<b>Bench test one: </b>
 
-To do this, we began work on the wiring harness for our bench test. 
+Parts used:
+AEM VCU
+Cascadia Motors iM225 Permanent magnet motor and inverter
+AEM EV CCU (Combined Charging Unit)
+8 Tesla Model 3 Battery units (Out of an optimistic 28 to
 
 
 
-
-
-
----
-layout: page
-title: project
-description: a project with a background image
-img: "/assets/img/Batteries.jpg"
----
 
 
 
