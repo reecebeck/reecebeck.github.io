@@ -8,6 +8,7 @@ category: work
 related_publications: true
 ---
 <b>Project Overview: </b>
+
 	Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
 
 <b>Bench test one: </b>
@@ -16,37 +17,21 @@ Parts used:
 AEM VCU
 Cascadia Motors iM225 Permanent magnet motor and inverter
 AEM EV CCU (Combined Charging Unit)
-8 Tesla Model 3 Battery units (Out of an optimistic 28 to
-
-
-
-
-
+8 Tesla Model 3 Battery units (Out of an optimistic 28 total)
 
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/CANID.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Batteries.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+        loading="eager" 
+        path="assets/img/Batteries.jpg" 
+        title="example image" 
+        class="img-fluid rounded z-depth-1" 
+        style="max-width: 300px%}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
 Say you wanted to write a bit about your project before you posted the rest of the images.
