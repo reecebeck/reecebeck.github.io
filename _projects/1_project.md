@@ -22,7 +22,7 @@ To do this, we began work on the wiring harness for our bench test.
 layout: page
 title: project
 description: a project with a background image
-img: /assets/img/Minimum_Power_Req.png
+img: "/assets/img/Batteries.jpg"
 ---
 
 
@@ -37,7 +37,7 @@ img: /assets/img/Minimum_Power_Req.png
         {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/CANID.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -45,7 +45,7 @@ img: /assets/img/Minimum_Power_Req.png
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Batteries.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
