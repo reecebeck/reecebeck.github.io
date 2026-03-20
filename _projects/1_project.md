@@ -22,13 +22,13 @@ AEM EV CCU (Combined Charging Unit)
 
 
 <div class="row">
-<div style="max-width: 200px; margin: 0 auto;">
+<div style="max-width: 400px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Batteries.jpg' 
    title='example image' 
-   class='img-fluid rounded z-depth-1' 
+   class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
     </div>
