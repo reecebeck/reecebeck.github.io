@@ -17,12 +17,12 @@ Parts used:
 AEM VCU
 Cascadia Motors iM225 Permanent magnet motor and inverter
 AEM EV CCU (Combined Charging Unit)
-8 Tesla Model 3 Battery units (Out of an optimistic 28 total)
+6 Tesla Model 3 Battery units (Out of an optimistic 28 total)
 
 
 
 <div class="row">
-<div style="max-width: 200px;">
+<div style="max-width: 200px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
@@ -38,7 +38,7 @@ AEM EV CCU (Combined Charging Unit)
 The goal here was to get moving fast. We wanted to create an initial prototype as soon as possible with the parts we had, because many of what we’d need to order were backordered or faced long lead times. 
 However, we were given a list of design goals which were far more lofty than the capabilities of the parts we had. The requested specs were incredible - long battery range (300mi+), 250kW fast charging, Tesla Plaid level horsepower, yet with technology from 2013, with 400V architecture. Regardless, we proceeded. 
 
-Starting with a subset of 8 batteries, we aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. 
+Starting with a subset of 6 batteries, we aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. 
 
 Insert photo of inverter precharge circuit
 
