@@ -16,11 +16,8 @@ Recently I began an internship in San Francisco where myself and two other inter
 Parts used:
 
 - AEM VCU
-
 - Cascadia Motors iM225 Permanent magnet motor and inverter
-
 - AEM EV CCU (Combined Charging Unit)
-
 - 6 Tesla Model 3 Battery units (Out of an optimistic 28 total)
 
 
@@ -40,9 +37,9 @@ Parts used:
 <div class="caption"> </div>
 
 The goal here was to get moving fast. We wanted to create an initial prototype as soon as possible with the parts we had, because many of what we’d need to order were backordered or faced long lead times. 
-However, we were given a list of design goals which were far more lofty than the capabilities of the parts we had. The requested specs were incredible - long battery range (300mi+), 250kW fast charging, Tesla Plaid level horsepower, yet with technology from 2013, with 400V architecture. Regardless, we proceeded. 
-
-Starting with a subset of 6 batteries, we aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. 
+However, we joined this project after the initial planning stage, and many of the parts initially ordered were not inline with the given design goals. Mainly, the parts we had were designed for a 400V architecture, but a modern EV with >150kW fast charging uses an 800V system. This would later give us more difficulty regarding battery capacity.
+ 
+Starting with a subset of 6 batteries, we aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. I built a simple precharge circuit to perform this function - it works using a smaller contactor to switch the pack voltage through a series resistor, until high voltage is detected in the inverter, at which point it shuts off and the main contactor closes.  
 
 Insert photo of inverter precharge circuit
 
