@@ -23,7 +23,7 @@ Parts used:
 
 
 <div class="row">
-<div style="max-width: 400px; margin: 0 auto;">
+<div style="max-width: 550px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
@@ -37,29 +37,31 @@ Parts used:
 <div class="caption"> </div>
 
 The goal here was to get moving fast. We wanted to create an initial prototype as soon as possible with the parts we had, because many of what we’d need to order were backordered or faced long lead times. 
-However, we joined this project after the initial planning stage, and many of the parts initially ordered were not inline with the given design goals. Mainly, the parts we had were designed for a 400V architecture, but a modern EV with >150kW fast charging uses an 800V system. This would later give us more difficulty regarding battery capacity.
+However, we joined this project after the initial planning stage, and many of the parts initially ordered were not inline with the given design goals. Mainly, the parts we had were designed for a 400V architecture, but a modern EV with >150kW fast charging uses an 800V system. This would later give us more difficulty regarding battery capacity.  
  
 Starting with a subset of 6 batteries, we aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. I built a simple precharge circuit to perform this function - it works using a smaller contactor to switch the pack voltage through a series resistor, until high voltage is detected in the inverter, at which point it shuts off and the main contactor closes.  
 
 Insert photo of inverter precharge circuit
 
-This system was controlled through the VCU, which was set up next. Initial configuration and tuning is achieved through a CAN link connected to a computer with AEM’s proprietary software. This process would be trivial, however the software AEMCAL(insert link) used for firmware configuration has numerous bugs, and has issues recognizing the CAN adapter device.
+This system is controlled through the VCU, which was set up next. Initial configuration and tuning is achieved through a CAN link connected to a computer with AEM’s proprietary software. This process would be trivial, however the software AEMCAL(insert link) used for firmware configuration has numerous bugs, and has issues recognizing the CAN adapter device.
 
-Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEM CAL, this can be done by setting the values equal to the following:
+Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEMCAL, this can be done by setting the values equal to the following:
+
 <div class="row">
+<div style="max-width: 700px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/CANID.png' 
    title='example image' 
    class='img-fluid rounded z-depth-1' 
-   style='max-width: 200px; height: auto;'
 %}
+    </div>
     </div>
 </div>
 At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
 
-We quickly added an accelerator pedal from a Tesla Model 3, and implemented a 3 position switch as a gear selector, provided sufficient inputs for the VCU to provide torque request commands to the motor. This marked completion of the first phase of the project - our VCU and motor successfully functioned together. 
+We quickly added an accelerator pedal from a Tesla Model 3, and implemented a 3 position switch as a gear selector, providing sufficient inputs for the VCU to provide torque request commands to the motor. This marked completion of the first phase of the project - our VCU and motor successfully functioned together. 
 
 <b>Bench test two, further goals:</b>
 
