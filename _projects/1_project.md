@@ -48,7 +48,7 @@ This system is controlled through the VCU, which was set up next. Initial config
 Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEMCAL, this can be done by setting the values equal to the following:
 
 <div class="row">
-<div style="max-width: 700px; margin: 0 auto;">
+<div style="max-width: 600px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
    loading='eager' 
@@ -59,11 +59,13 @@ Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. B
     </div>
     </div>
 </div>
+<div class="caption"> Figure 2: CAN ID Designation </div>
+
 At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
 
 We quickly added an accelerator pedal from a Tesla Model 3, and implemented a 3 position switch as a gear selector, providing sufficient inputs for the VCU to provide torque request commands to the motor. This marked completion of the first phase of the project - our VCU and motor successfully functioned together. 
 
-<b>Bench test two, further goals:</b>
+<strong>Bench test two, further goals:</strong>
 
 Coming back to the initial goals of the project - a high performance, long range, fast charging EV, we conducted a design review. Our bench test functioned well, and would scale up to full size properly with a full set of batteries. However, questions remained, namely with the desired specifications of the original build. During this project's conception, two Tesla vehicles were salvaged for their battery packs, and all were to be used for the benefit of added range. However, this came with technical challenges - the motor-inverter package that was purchased could support a max voltage of 480V, yet the complete use of two full Tesla batteries would put the pack voltage beyond 700V, far too high for our equipment. Additionally, 250kW fast charging requires a system voltage of 800V, and currently no consumer equipment exists for this build. Clearly the scope of this project had to be adjusted. 
 
