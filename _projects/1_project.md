@@ -6,18 +6,22 @@ img: assets/img/CANID.png
 importance: 1
 category: work
 ---
-<b>Project Overview: </b>
+<strong>Project Overview: </strong>
 
-Recently I began an internship in San Francisco, where myself and two other interns were hired to completely design the electrical drive system, as well as all infotainment and electronics for a custom electric vehicle from scratch. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project. 
+Recently I began an internship in San Francisco where myself and two other interns were hired to completely design the electrical drive system, infotainment, and electronics for a custom electric vehicle. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project.
 
 
-<b>Bench test one: </b>
+<strong>Bench test one: </strong>
 
 Parts used:
-AEM VCU
-Cascadia Motors iM225 Permanent magnet motor and inverter
-AEM EV CCU (Combined Charging Unit)
-6 Tesla Model 3 Battery units (Out of an optimistic 28 total)
+
+- AEM VCU
+
+- Cascadia Motors iM225 Permanent magnet motor and inverter
+
+- AEM EV CCU (Combined Charging Unit)
+
+- 6 Tesla Model 3 Battery units (Out of an optimistic 28 total)
 
 
 
@@ -45,7 +49,6 @@ Insert photo of inverter precharge circuit
 This system was controlled through the VCU, which was set up next. Initial configuration and tuning is achieved through a CAN link connected to a computer with AEM’s proprietary software. This process would be trivial, however the software AEMCAL(insert link) used for firmware configuration has numerous bugs, and has issues recognizing the CAN adapter device.
 
 Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEM CAL, this can be done by setting the values equal to the following:
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
        {% include figure.liquid 
@@ -57,7 +60,6 @@ Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. B
 %}
     </div>
 </div>
-
 At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
 
 We quickly added an accelerator pedal from a Tesla Model 3, and implemented a 3 position switch as a gear selector, provided sufficient inputs for the VCU to provide torque request commands to the motor. This marked completion of the first phase of the project - our VCU and motor successfully functioned together. 
