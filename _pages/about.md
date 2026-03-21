@@ -16,8 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Avid Engineer and tinkerer. Currently studying mechanical engineering at WPI
+Avid Engineer and tinkerer. Currently studying mechanical engineering at WPI with a minor in electrical engineering
 
 I refurbish and resell used silicon chip manufacturing equipment sourced from silicon valley on my <a href="https://www.ebay.com/usr/rebe1269">ebay store</a>
 
-Apart from these, I am a member of my school's club lacrosse team and the Alpha Tao Omega Fraternity. 
+I also play club lacrosse and I love to hike & be outside!
