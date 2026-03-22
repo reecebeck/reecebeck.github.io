@@ -18,7 +18,7 @@ Parts used:
 - AEM VCU
 - Cascadia Motors iM225 Permanent magnet motor and inverter
 - AEM EV CCU (Combined Charging Unit)
-- 6 Tesla Model 3 Battery units (Out of an optimistic 28 total)
+- 6 Tesla Model 3 Battery units (Out of 28 total)
 
 
 
@@ -34,7 +34,7 @@ Parts used:
     </div>
     </div>
 </div>
-<div class="caption"> </div>
+<div class="caption"> Figure 1. The original Tesla battery modules</div>
 
 The goal here was to get moving fast. We wanted to create an initial prototype as soon as possible with the parts we had, because many of what we’d need to order were backordered or faced long lead times. 
 However, we joined this project after the initial planning stage, and many of the parts initially ordered were not inline with the given design goals. Mainly, the parts we had were designed for a 400V architecture, but a modern EV with >150kW fast charging uses an 800V system. This would later give us more difficulty regarding battery capacity.  
@@ -59,7 +59,7 @@ Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. B
     </div>
     </div>
 </div>
-<div class="caption"> Figure 2: CAN ID Designation </div>
+<div class="caption"> Figure 2: CAN ID designation </div>
 
 At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
 

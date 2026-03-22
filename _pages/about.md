@@ -6,7 +6,7 @@ subtitle: WPI Mechanical Engineering
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_4576.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Oakland, California</p>
@@ -18,6 +18,6 @@ social: true # includes social icons at the bottom of the page
 
 Avid Engineer and tinkerer. Currently studying mechanical engineering at WPI with a minor in electrical engineering
 
-I refurbish and resell used silicon chip manufacturing equipment sourced from silicon valley on my <a href="https://www.ebay.com/usr/rebe1269">ebay store</a>
+I refurbish and resell used silicon chip manufacturing equipment from silicon valley on my <a href="https://www.ebay.com/usr/rebe1269">ebay store</a>
 
-I also play club lacrosse and I love to hike & be outside!
+I also play club lacrosse and I love to hike & be outside
