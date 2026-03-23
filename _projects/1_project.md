@@ -9,7 +9,7 @@ category: work
 <strong>Project Overview: </strong>
 
 Recently I began an internship in San Francisco where myself and two other interns were hired to completely design the electrical drive system, infotainment, and electronics for a custom electric vehicle. I took ownership of the drivetrain and power systems within the car - designing and building what we needed for an initial bench test of the project.
-
+ 
 The original design goals were similar to top EVs in the market - 300+ mile range, 250kW fast charging, and Tesla Plaid like acceleration. Before these systems were to go in the final car, we built a full test bench to evaluate their performance and plan all electronics. From that point, with a finalized electrical layout, we would translate it into a complete electrical plan and wiring harness for the car.
 
 <strong>Bench test one: </strong>
