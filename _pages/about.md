@@ -6,7 +6,7 @@ subtitle: WPI Mechanical Engineering
 
 profile:
   align: right
-  image: IMG_4576.jpg
+  image: IMG_0214.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Oakland, California</p>
