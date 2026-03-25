@@ -3,8 +3,8 @@ layout: page
 title: project 3 with very long name
 description: a project that redirects to another website
 img: assets/img/7.jpg
-importance: 3
-category: Work
+importance: 
+category: All
 ---
 
 Every project has a beautiful feature showcase page.
