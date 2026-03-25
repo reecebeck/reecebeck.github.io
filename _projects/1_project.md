@@ -36,7 +36,7 @@ Parts used:
     </div>
     </div>
 </div>
-<div class="caption"> Figure 1. The original Tesla battery modules</div>
+<div class="caption"> Figure 1: The original Tesla battery modules</div>
 
 The goal here was to get moving fast. I wanted to create an initial prototype as soon as possible with the parts we had, because many of what I’d need to order was backordered or faced long lead times. 
 However, I joined this project after the initial planning stage, and many of the parts initially ordered were not inline with the given design goals. Mainly, the parts we had were designed for a 480V architecture, but a modern EV with >150kW fast charging uses an 800V system. Additionally, the 480V architecture limited us in terms of battery capacity, because only a limited amount could be placed in series before reaching the max voltage.
