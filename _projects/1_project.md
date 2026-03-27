@@ -43,10 +43,21 @@ However, I joined this project after the initial planning stage, and many of the
 
 Starting with a subset of 6 batteries for simplicity, I aimed to get the motor spinning. To provide power to the motor, inverter precharge was required, a circuit designed to slowly charge the inverter’s internal capacitance to full battery voltage through an external resistance. This served multiple goals, mainly preserving the life of the main contactor by reducing the inrush current, but also protecting the inverter itself from extreme current surges. I built a simple precharge circuit to perform this function - it works using a smaller contactor to switch the pack voltage through a series resistor, until high voltage is detected in the inverter, at which point it shuts off and the main contactor closes.
   
+<div class="row">
+<div style="max-width: 550px; margin: 0 auto;">
+    <div class="col-sm mt-3 mt-md-0">
+       {% include figure.liquid 
+   loading='eager' 
+   path='assets/img/Precharge.png' 
+   title='example image' 
+   class='img-fluid rounded z-dep   th-1' 
+%}
+    </div>
+    </div>
+</div>
+<div class="caption"> Figure 2: Inverter Precharge Circuit</div>
 
-Insert photo of inverter precharge circuit
-
-This system is controlled through the VCU, which was set up next. Initial configuration and tuning is achieved through a CAN link connected to a computer with AEM’s proprietary software. This process would be trivial, however the software AEMCAL(insert link) used for firmware configuration has numerous bugs, and has issues recognizing the CAN adapter device.
+This system is controlled through the VCU, which was set up next. Initial configuration and tuning is achieved through a CAN link connected to a computer with AEM’s proprietary software. This process would be trivial, however the software <a href="https://www.aemelectronics.com/" target="_blank">AEMCAL</a> used for firmware configuration has numerous bugs, and has issues recognizing the CAN adapter device.
 
 Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. Both require external termination, and the inverter’s CAN baud rate must be adjusted to 500kHz through a dedicated serial connection. At this point the devices will begin to attempt to send CAN frames to each other. However, in plain configuration these will not be received by the VCU, as the CAN ID of the inverter, or the can ID of the VCU must be adjusted. In the VCU software AEMCAL, this can be done by setting the values equal to the following:
 
@@ -62,7 +73,7 @@ Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. B
     </div>
     </div>
 </div>
-<div class="caption"> Figure 2: CAN ID designation </div>
+<div class="caption"> Figure 3: CAN ID designation </div>
 
 At this point, the devices should communicate successfully. This allows for commands to be sent between the devices, such as temperature readings or even torque request commands. 
 
