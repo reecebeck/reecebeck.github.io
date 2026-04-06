@@ -2,7 +2,7 @@
 layout: page
 title: FRC Shooter Development
 description: 
-img: assets/img/DSC06281.jpg
+img: assets/img/Shooter.png
 importance: 3
 category: All
 ---
