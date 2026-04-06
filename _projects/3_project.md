@@ -55,15 +55,23 @@ Overall, this project showcases not just effective implementation and design, bu
 An earlier prototype is shown below in slow motion:
 
 <div class="row">
-<div style="max-width: 550px; margin: 0 auto;">
+  <div style="max-width: 550px; margin: 0 auto;">
     <div class="col-sm mt-3 mt-md-0">
-       {% include figure.liquid 
-   loading='eager' 
-   path='assets/img/Shooter_Prototype.mov' 
-   title='Shooter Prototype' 
-   class='img-fluid rounded z-dep   th-1' 
-%}
+      
+      <video 
+        class="img-fluid rounded z-depth-1" 
+        controls 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        style="width: 100%;">
+        
+        <source src="{{ 'assets/video/Shooter_Prototype.mov' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
     </div>
-    </div>
+  </div>
 </div>
-<div class="caption"> Figure 2: The final shooter revision</div>
+<div class="caption">Figure 3: Prototype Testing</div>

@@ -50,7 +50,7 @@ Starting with a subset of 6 batteries for simplicity, I aimed to get the motor s
    loading='eager' 
    path='assets/img/Precharge.png' 
    title='Precharge' 
-   class='img-fluid rounded z-dep   th-1' 
+   class='img-fluid rounded z-depth-1' 
 %}
     </div>
     </div>
