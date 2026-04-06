@@ -3,11 +3,11 @@ layout: page
 title: FRC Shooter Development
 description: 
 img: assets/img/Shooter.png
-importance: 3
+importance: 2
 category: All
 ---
 <strong>Background: </strong>
-As part of 8033 Highlander Robotics, I led the team working on shooter development. This subsystem was built in about 5 weeks, from initial prototypes to the final revision. All CAD was done in OnShape, and the final shooter was milled from aluminum plate.
+As part of 8033 <a href="https://www.frc8033.com/" target="_blank">Highlander Robotics</a>, I led the team working on shooter development. This subsystem was built in about 5 weeks, from initial prototypes to the final revision. All CAD was done in OnShape, and the final shooter was milled from aluminum plate.
 
 <strong>Design and Prototyping:</strong>
 

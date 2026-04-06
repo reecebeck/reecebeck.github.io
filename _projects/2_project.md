@@ -3,7 +3,7 @@ layout: page
 title: DC-DC Converter
 description: 
 img: assets/img/DSC06281.jpg
-importance: 2
+importance: 3
 category: All
 ---
 <strong>Background: </strong>
