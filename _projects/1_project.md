@@ -49,7 +49,7 @@ Starting with a subset of 6 batteries for simplicity, I aimed to get the motor s
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Precharge.png' 
-   title='example image' 
+   title='Precharge' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
@@ -67,7 +67,7 @@ Next the inverter and VCU are connected through CAN, on CAN line 2 of the VCU. B
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/CANID.png' 
-   title='example image' 
+   title='CANID' 
    class='img-fluid rounded z-depth-1' 
 %}
     </div>

@@ -22,7 +22,7 @@ Finding a core for this application requires considering core saturation as a fu
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/DSC_0589.jpg' 
-   title='example image' 
+   title='Supply Testing' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
@@ -38,7 +38,7 @@ Initially this circuit suffered from large voltage spikes on the primary, as the
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/DSC06281.jpg' 
-   title='example image' 
+   title='Final Board' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>

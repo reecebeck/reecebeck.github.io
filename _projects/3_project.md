@@ -24,7 +24,7 @@ Our first full prototype is shown below in CAD. Its purpose was to test the repr
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Shooter_Rev1.png' 
-   title='example image' 
+   title='First Shooter Prototype' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
@@ -40,7 +40,7 @@ The final shooter uses two independently controlled sets of Stealth wheels to al
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Shooter.png' 
-   title='example image' 
+   title='Final Shooter CAD' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
@@ -60,7 +60,7 @@ An earlier prototype is shown below in slow motion:
        {% include figure.liquid 
    loading='eager' 
    path='assets/img/Shooter_Prototype.mov' 
-   title='example image' 
+   title='Shooter Prototype' 
    class='img-fluid rounded z-dep   th-1' 
 %}
     </div>
