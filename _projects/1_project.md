@@ -1,7 +1,7 @@
 ---
 layout: page
 title: EV Conversion Project
-description: EV Drivetrain
+description:
 img: assets/img/IMG_1002.jpg
 importance: 1
 category: All
